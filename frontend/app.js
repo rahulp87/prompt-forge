@@ -1,3 +1,9 @@
+if (typeof ENV === 'undefined') {
+    window.ENV = {
+        API_BASE_URL: '/api',
+        DEFAULT_AI_PROVIDER: 'ollama'
+    };
+}
 // App state
 const AppState = {
     API_BASE: ENV.API_BASE_URL,
